@@ -1,0 +1,56 @@
+{
+  "name": "webpack_core",
+  "sideEffects": "false",
+  "version": "1.0.0",
+  "description": "webpack config for fast start",
+  "main": "src/index.tsx",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "start:dev": "webpack serve --config webpack.dev.js",
+    "start:prod": "webpack serve --config webpack.prod.js",
+    "stats:dev": "STATS=server webpack --profile --json > stats.json --config webpack.dev.js",
+    "stats:prod": "STATS=server webpack --profile --json > stats.json --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meetyouafter/webpack_core.git"
+  },
+  "author": "Anton Levus",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-react": "^7.22.3",
+    "@types/react": "^18.2.8",
+    "@types/react-dom": "^18.2.4",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "babel-loader": "^9.1.2",
+    "babel-plugin-react-scoped-css": "^1.1.1",
+    "core-js": "^3.30.2",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.42.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-react": "^7.32.2",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.5",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.2",
+    "source-map-loader": "^4.0.1",
+    "style-loader": "^3.3.2",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.3",
+    "webpack": "^5.85.0",
+    "webpack-bundle-analyzer": "^4.8.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.2",
+    "webpack-merge": "^5.9.0"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
+  }
+}
